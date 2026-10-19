@@ -151,7 +151,7 @@ Nav2 parameters are the unmodified TurtleBot 4 defaults (goal tolerance 0.25 m /
 
 Full results, metric definitions and discussion are in Sec. 4 of the report.
 
-**Demo video:** a screen recording of SLAM Toolbox and Nav2 driving the robot in RViz (≈ 160 MB, too large for GitHub): [add link].
+**Demo video:** [screen recording of SLAM Toolbox and Nav2 driving the robot in RViz (YouTube)](https://youtu.be/3-qAF6DUQbU).
 
 ---
 
