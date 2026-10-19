@@ -1,6 +1,6 @@
 # SLAM Toolbox + Nav2 on a simulated TurtleBot 4
 
-ICTE4001 Introduction to Autonomous Robots — Case Study 2 (Curtin University), Group [##].
+ICTE4001 Introduction to Autonomous Robots — Case Study 2 (Curtin University), Group 4.
 
 This repository contains everything needed to reproduce the application and evaluation part of our report
 *Graph-Based SLAM with SLAM Toolbox: Theory, Implementation Analysis and Evaluation on TurtleBot4*:
@@ -22,7 +22,7 @@ evaluation scripts, numerical results, figures, and troubleshooting notes.
 
 | Component | Version / setting |
 |---|---|
-| Host | MSI Windows laptop, Intel Core i5-11400H (6 cores, 2.7 GHz), NVIDIA RTX 3060 Laptop GPU, [RAM] |
+| Host | MSI Windows laptop, Intel Core i5-11400H (6 cores, 2.7 GHz), NVIDIA RTX 3060 Laptop GPU, 16 GB RAM |
 | Linux | Ubuntu 24.04 under WSL2 |
 | ROS 2 | Jazzy |
 | Simulator | Gazebo Sim 8 (Harmonic) + TurtleBot 4 simulator packages |
