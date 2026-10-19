@@ -22,7 +22,7 @@ evaluation scripts, numerical results, figures, and troubleshooting notes.
 
 | Component | Version / setting |
 |---|---|
-| Host | Windows laptop, NVIDIA RTX 3060 Laptop GPU, [CPU], [RAM] |
+| Host | MSI Windows laptop, Intel Core i5-11400H (6 cores, 2.7 GHz), NVIDIA RTX 3060 Laptop GPU, [RAM] |
 | Linux | Ubuntu 24.04 under WSL2 |
 | ROS 2 | Jazzy |
 | Simulator | Gazebo Sim 8 (Harmonic) + TurtleBot 4 simulator packages |
@@ -52,7 +52,17 @@ Two one-off edits to the installed robot description fixed both (back up each fi
 2. Sensor update rates reduced: RPLIDAR 62 → 10 Hz; 7 IR-intensity + 4 cliff sensors 62 → 5 Hz; OAK-D camera 30 → 1 Hz.
    None of the reduced sensors is used by SLAM Toolbox or Nav2.
 
-Result: real-time factor ≈ 1.0. File paths: [add full paths of the edited files].
+Result: real-time factor ≈ 1.0. Files edited (each backed up as `<file>.bak` before editing):
+
+| File | Change |
+|---|---|
+| `/opt/ros/jazzy/share/irobot_create_description/urdf/create3.urdf.xacro` | sensor `render_engine` `ogre` → `ogre2` (line 301) |
+| `/opt/ros/jazzy/share/turtlebot4_description/urdf/sensors/rplidar.urdf.xacro` | lidar `update_rate` 62 → 10 |
+| `/opt/ros/jazzy/share/irobot_create_description/urdf/sensors/ir_intensity.urdf.xacro` | IR-intensity `update_rate` 62 → 5 |
+| `/opt/ros/jazzy/share/irobot_create_description/urdf/sensors/cliff_sensor.urdf.xacro` | cliff `update_rate` 62 → 5 |
+| `/opt/ros/jazzy/share/turtlebot4_description/urdf/sensors/oakd.urdf.xacro` | camera `update_rate` 30 → 1 |
+
+To undo, copy each `.bak` file back over the edited file.
 
 ---
 
