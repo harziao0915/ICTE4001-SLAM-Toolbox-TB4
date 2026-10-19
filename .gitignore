@@ -1,0 +1,7 @@
+# rosbags and large raw logs are not stored in the repository
+bags/
+*.db3
+*.mcap
+e4_raw_*.txt
+*.f32
+__pycache__/

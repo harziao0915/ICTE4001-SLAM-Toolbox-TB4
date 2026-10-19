@@ -1,0 +1,8 @@
+goal,status,nav_time_s,recoveries,nav_error_m (goal vs SLAM pose),true_final_error_m (goal vs ground truth),localisation_error_m (SLAM vs ground truth)
+G1,SUCCEEDED,33.7,3,0.199,0.201,0.002
+G2,SUCCEEDED,21.7,0,0.196,0.208,0.012
+G3,SUCCEEDED,44.0,0,0.116,0.126,0.02
+G4,SUCCEEDED,41.7,0,0.196,0.187,0.022
+G5,SUCCEEDED,30.8,0,0.196,0.195,0.006
+MEAN,5/5 SUCCEEDED,34.4,0.6,0.181,0.183,0.013
+MAX,,,,0.199,0.208,0.022

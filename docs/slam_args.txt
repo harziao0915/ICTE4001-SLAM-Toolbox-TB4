@@ -1,0 +1,25 @@
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'use_sim_time':
+        Use sim time. Valid choices are: ['true', 'false']
+        (default: 'false')
+
+    'sync':
+        Use synchronous SLAM. Valid choices are: ['true', 'false']
+        (default: 'true')
+
+    'namespace':
+        Robot namespace
+        (default: '')
+
+    'autostart':
+        Automatically startup the slamtoolbox. Ignored when use_lifecycle_manager is true. Valid choices are: ['true', 'false']
+        (default: 'true')
+
+    'use_lifecycle_manager':
+        Enable bond connection during node activation. Valid choices are: ['true', 'false']
+        (default: 'false')
+
+    'params':
+        Path to the SLAM Toolbox configuration file
+        (default: PathJoinSubstitution(''/opt/ros/jazzy/share/turtlebot4_navigation', 'config', 'slam.yaml''))
