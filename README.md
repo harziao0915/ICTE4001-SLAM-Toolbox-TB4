@@ -178,4 +178,4 @@ The evaluation scripts were written with the assistance of a generative AI tool 
 
 ## Authors
 
-[Member A] · [Member B] · Har Zi Ao (Member C — robot lead, experiments, evaluation)
+Sririk Mukherjee | Mohamad Nursyaidin Shamsudin | Har Zi Ao (Member C — robot lead, experiments, evaluation)
