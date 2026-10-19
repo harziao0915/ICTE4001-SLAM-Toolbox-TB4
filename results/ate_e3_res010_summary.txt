@@ -1,0 +1,8 @@
+ATE evaluation - bag: e3_res010
+Samples: 4911 (every 0.1 s sim)   duration: 531.0 s   ground-truth path length: 68.93 m
+
+                     RMSE     mean   median     max   [m]
+SLAM (no align)    0.028   0.023   0.021   0.076
+SLAM (SE2 align)   0.017   0.013   0.012   0.054   (align rot +0.01 deg)
+Odom (no align)    2.947   2.036   1.332   7.968
+Odom (SE2 align)   1.265   1.104   1.030   2.234   (align rot -29.41 deg)

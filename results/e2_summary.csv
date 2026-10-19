@@ -1,0 +1,12 @@
+metric,loop_closure_ON (e2_loop_on),loop_closure_OFF (e2_loop_off),note
+route,"W1-W5 x2 (10 goals)","W1-W5 x2 (10 goals)","same planned route"
+waypoints_reached,9/10 (L2_W5 aborted: trapped at W4),8/10 (L1_W4 & L2_W4 aborted within 8 s),Nav2 failures near rack/wall strip; not SLAM-related
+gt_path_length_m,90.50,86.28,
+duration_s_sim,997.6,561.7,ON run includes ~300 s stuck at W4
+ATE_RMSE_m (no align),0.016,0.017,
+ATE_RMSE_m (SE2 align),0.010,0.014,
+ATE_max_m,0.054,0.057,
+odom_only_ATE_RMSE_m,6.695,3.068,odometry heading drift 56 deg vs 25 deg (aligned)
+map_precision (occupied cells within 1 cell of GT-pose map),0.787,0.783,maps rebuilt from scans (moved >0.1 m or >0.1 rad)
+map_recall,0.959,0.959,
+odom_only_map_precision/recall,0.061 / 0.114,0.062 / 0.111,

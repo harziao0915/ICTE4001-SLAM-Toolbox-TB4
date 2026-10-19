@@ -101,7 +101,8 @@ python3 scripts/ate_eval.py ~/bags/<run_name>     # ATE, raw and SE(2)-aligned
 python3 scripts/bag_export.py ~/bags/<run_name>   # scans + SLAM/odometry/ground-truth laser poses
 ```
 
-Both scripts write to the folder set in `OUT_DIR` at the top of each file — change it to a folder on your machine.
+All scripts write to a folder set near the top of each file (`OUT_DIR` in the Python scripts, `DIR` in the shell scripts),
+which points to the authors' Windows folder — change it to a folder on your machine.
 
 ---
 
@@ -119,7 +120,8 @@ Both scripts write to the folder set in `OUT_DIR` at the top of each file — ch
 | `scripts/ate_eval.py` | Absolute trajectory error from a rosbag | |
 | `scripts/bag_export.py` | Exports scans and poses for offline map rebuilding | |
 | `results/` | Summary CSVs, ATE summary, saved map metadata | |
-| `figures/` | All figures used in the report | |
+| `results/maps/` | Saved maps at 0.05 m and 0.10 m (`.pgm` + `.yaml`) | |
+| `figures/` | All figures used in the report, plus the E2 route, E4 goal set and SLAM node graph | |
 | `docs/` | `ros2 node info /slam_toolbox` and `slam.launch.py` arguments | |
 
 Nav2 parameters are the unmodified TurtleBot 4 defaults (goal tolerance 0.25 m / 0.25 rad, inflation radius 0.45 m).
@@ -138,6 +140,8 @@ Nav2 parameters are the unmodified TurtleBot 4 defaults (goal tolerance 0.25 m /
 ![E4 trajectory](figures/e4_trajectory.png)
 
 Full results, metric definitions and discussion are in Sec. 4 of the report.
+
+**Demo video:** a screen recording of SLAM Toolbox and Nav2 driving the robot in RViz (≈ 160 MB, too large for GitHub): [add link].
 
 ---
 

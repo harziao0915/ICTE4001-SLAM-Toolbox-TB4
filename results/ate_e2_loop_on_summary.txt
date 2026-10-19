@@ -1,0 +1,8 @@
+ATE evaluation - bag: e2_loop_on
+Samples: 9227 (every 0.1 s sim)   duration: 997.6 s   ground-truth path length: 90.50 m
+
+                     RMSE     mean   median     max   [m]
+SLAM (no align)    0.016   0.014   0.011   0.054
+SLAM (SE2 align)   0.010   0.007   0.002   0.043   (align rot +0.01 deg)
+Odom (no align)    6.695   6.110   7.979   10.402
+Odom (SE2 align)   1.441   1.284   1.129   3.763   (align rot -56.16 deg)
